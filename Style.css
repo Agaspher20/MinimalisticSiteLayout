@@ -1,0 +1,166 @@
+﻿body {
+    text-align: center;
+}
+
+.layout {
+    margin: 0 auto; /* Center in other browsers */
+    max-width: 1200px;
+    text-align: left;
+}
+/*>>> General heading style >>>*/
+body > .layout > header {
+    background: #E6E6E6 url("images/headerBackground.png") no-repeat left top;
+    background-size: cover;
+}
+/*<<< General heading style <<<*/
+/*>>> General navigation style >>>*/
+nav > button.menu {
+    display: none;
+}
+
+nav > button.up {
+    position: fixed;
+    top: 250px;
+    display: none;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+/*<<< General navigation style <<<*/
+
+/*>>> General content section style >>>*/
+.content {
+    margin: 20px 3%;
+}
+
+aside article {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+article > img {
+    vertical-align:middle;
+    margin: 5px 0;
+}
+/*<<< General content section style <<<*/
+
+/*>>> General navigation style >>>*/
+.nav-active {
+    background-color: lightgray;
+}
+/*<<< General navigation style <<<*/
+
+/*>>> Phone style >>>*/
+@media (max-width:700px) {
+    /*>>> Vendor specific style >>>*/
+    @-webkit-viewport {
+        width: device-width;
+    }
+
+    @-moz-viewport {
+        width: device-width;
+    }
+
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    @-o-viewport {
+        width: device-width;
+    }
+
+    @viewport {
+        width: device-width;
+    }
+    /*<<< Vendor specific style <<<*/
+    /*>>> Phone heading style >>>*/
+    body > .layout > header {
+        margin-top: 30px;
+    }
+    /*<<< Phone heading style <<<*/
+    /*>>> Phone navigation style >>>*/
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 100%;
+    }
+
+    nav > button {
+        height: 30px;
+    }
+
+    nav > button.menu {
+        display: inline-block;
+    }
+
+    nav > button.up {
+        position: relative;
+        top: 0;
+        float: right;
+        margin-right: 10px;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    nav > ul > li {
+        display: block;
+        text-align: center;
+    }
+    /*<<< Phone navigation style <<<*/
+    /*>>> Phone content section style >>>*/
+    .content {
+        margin: 20px 0;
+    }
+    /*<<< Phone content section style <<<*/
+}
+/*<<< Phone style <<<*/
+
+/*>>> Not phone style >>>*/
+@media (min-width: 700px) {
+    nav > ul {
+        display: block !important; /*For appropriate navigation behavior on toggle*/
+    }
+}
+/*<<< Not phone style <<<*/
+/*>>> Tablet style >>>*/
+@media (min-width: 700px) and (max-width: 1200px) {
+    aside article {
+        display: inline-block;
+        width: 31%;
+        vertical-align: top;
+        padding: 0 5px;
+    }
+}
+
+/*>>> Laptops and PCs style >>>*/
+@media (min-width: 1200px) {
+    /*>>> Aside style >>>*/
+    aside {
+        box-sizing: border-box;
+        float: right;
+        width: 17%;
+        padding-left: 5px;
+    }
+    /*<<< Aside style <<<*/
+
+    /*>>> Content section style >>>*/
+    section {
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        width: 83%;
+        padding-right: 5px;
+    }
+    /*<<< Content section style <<<*/
+}
+/*<<< Laptops and PCs style <<<*/
