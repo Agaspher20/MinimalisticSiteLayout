@@ -102,7 +102,7 @@ article > img {
     }
 
     nav > button.up {
-        position: relative;
+        position: static;
         top: 0;
         float: right;
         margin-right: 10px;
