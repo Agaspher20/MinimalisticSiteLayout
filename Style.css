@@ -99,6 +99,7 @@ article > img {
 
     nav > button.menu {
         display: inline-block;
+        float: left;
     }
 
     nav > button.up {
