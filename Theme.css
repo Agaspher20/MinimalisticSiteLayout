@@ -14,7 +14,7 @@ body > .layout > header {
 /*>>> Phone style >>>*/
 @media (max-width:700px) {
     /*>>> Phone navigation style >>>*/
-    nav {
+    nav > .controls, nav > ul {
         background-color: white;
     }
     /*<<< Phone navigation style <<<*/

@@ -8,11 +8,11 @@
     text-align: left;
 }
 /*>>> General navigation style >>>*/
-nav > button.menu {
+nav > .controls > button.menu {
     display: none;
 }
 
-nav > button.up {
+nav > .controls > button.up {
     position: fixed;
     top: 250px;
     display: none;
@@ -76,22 +76,28 @@ article > img {
     }
     /*<<< Phone heading style <<<*/
     /*>>> Phone navigation style >>>*/
-    nav {
+    nav > .controls, nav > ul {
         position: fixed;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+    
+    nav > .controls {
         top: 0;
-        width: 100%;
     }
 
-    nav > button {
+    nav > .controls > button {
         height: 30px;
     }
 
-    nav > button.menu {
+    nav > .controls > button.menu {
         display: inline-block;
         float: left;
     }
 
-    nav > button.up {
+    nav > .controls > button.up {
         position: static;
         top: 0;
         float: right;
@@ -100,7 +106,7 @@ article > img {
 
     nav > ul {
         display: none;
-        margin: 0;
+        top: 30px;
     }
 
     nav > ul > li {
