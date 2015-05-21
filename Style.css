@@ -7,12 +7,6 @@
     max-width: 1200px;
     text-align: left;
 }
-/*>>> General heading style >>>*/
-body > .layout > header {
-    background: #E6E6E6 url("images/headerBackground.png") no-repeat left top;
-    background-size: cover;
-}
-/*<<< General heading style <<<*/
 /*>>> General navigation style >>>*/
 nav > button.menu {
     display: none;
@@ -25,7 +19,7 @@ nav > button.up {
 }
 
 nav > ul {
-    margin: 0;
+    margin: 0 0 0 1%;
     padding: 0;
     list-style-type: none;
 }
@@ -37,9 +31,11 @@ nav > ul > li {
 
 /*>>> General content section style >>>*/
 .content {
-    margin: 20px 3%;
+    padding: 20px 0;
 }
-
+section {
+    padding: 0 1% 0 45px;
+}
 aside article {
     width: 100%;
     display: block;
@@ -50,12 +46,6 @@ article > img {
     margin: 5px 0;
 }
 /*<<< General content section style <<<*/
-
-/*>>> General navigation style >>>*/
-.nav-active {
-    background-color: lightgray;
-}
-/*<<< General navigation style <<<*/
 
 /*>>> Phone style >>>*/
 @media (max-width:700px) {
@@ -89,7 +79,6 @@ article > img {
     nav {
         position: fixed;
         top: 0;
-        background-color: white;
         width: 100%;
     }
 
@@ -111,6 +100,7 @@ article > img {
 
     nav > ul {
         display: none;
+        margin: 0;
     }
 
     nav > ul > li {
@@ -119,8 +109,8 @@ article > img {
     }
     /*<<< Phone navigation style <<<*/
     /*>>> Phone content section style >>>*/
-    .content {
-        margin: 20px 0;
+    section, aside {
+        padding: 0 1%;
     }
     /*<<< Phone content section style <<<*/
 }
@@ -141,26 +131,30 @@ article > img {
         vertical-align: top;
         padding: 0 5px;
     }
+    aside {
+        padding: 0 1% 0 45px;
+    }
 }
 
 /*>>> Laptops and PCs style >>>*/
 @media (min-width: 1200px) {
+    .content {
+        display: table;
+    }
     /*>>> Aside style >>>*/
     aside {
         box-sizing: border-box;
-        float: right;
         width: 17%;
-        padding-left: 5px;
+        padding: 0 5px;
+        display: table-cell;
     }
     /*<<< Aside style <<<*/
 
     /*>>> Content section style >>>*/
     section {
         box-sizing: border-box;
-        display: block;
-        float: left;
+        display: table-cell;
         width: 83%;
-        padding-right: 5px;
     }
     /*<<< Content section style <<<*/
 }

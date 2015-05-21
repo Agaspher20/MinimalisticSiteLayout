@@ -1,0 +1,22 @@
+/*>>> General heading style >>>*/
+body > .layout > header {
+    background: #E6E6E6 url("images/headerBackground.png") no-repeat left top;
+    background-size: cover;
+}
+/*<<< General heading style <<<*/
+
+/*>>> General navigation style >>>*/
+.nav-active {
+    background-color: lightgray;
+}
+/*<<< General navigation style <<<*/
+
+/*>>> Phone style >>>*/
+@media (max-width:700px) {
+    /*>>> Phone navigation style >>>*/
+    nav {
+        background-color: white;
+    }
+    /*<<< Phone navigation style <<<*/
+}
+/*<<< Phone style <<<*/
